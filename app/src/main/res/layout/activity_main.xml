@@ -38,7 +38,7 @@
                     android:layout_toStartOf="@+id/imageView"
                     android:fontFamily="@font/bold"
                     android:text="Wilujeng Sumping"
-                    android:textColor="#000000"
+                    android:textColor="#fff"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -61,6 +61,7 @@
                 android:rowCount="3">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cdng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
