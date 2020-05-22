@@ -8,6 +8,36 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC033"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/bold"
+                    android:text="Aksara Sunda"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,28 +55,28 @@
                 <View
                     android:id="@+id/view"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:background="@drawable/bg" />
+                    android:layout_height="200dp"
+                    android:background="@drawable/bgmain" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
-                    android:layout_height="57dp"
-                    android:layout_marginStart="19dp"
-                    android:layout_marginTop="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerInParent="true"
                     android:layout_toStartOf="@+id/imageView"
                     android:fontFamily="@font/bold"
-                    android:text="Wilujeng Sumping"
+                    android:text="Wilujeng Sumping!"
                     android:textColor="#fff"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
                     android:layout_marginEnd="10dp"
                     app:srcCompat="@drawable/ic_people" />
             </RelativeLayout>
@@ -58,7 +88,7 @@
                 android:alignmentMode="alignMargins"
                 android:columnCount="2"
                 android:columnOrderPreserved="false"
-                android:rowCount="3">
+                android:rowCount="6">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cdng"
@@ -81,7 +111,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/bold"
+                            android:fontFamily="@font/medium"
                             android:text="Aksara \nNgalagena"
                             android:textColor="#fff"
                             android:textSize="16dp"></TextView>
@@ -115,7 +145,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/bold"
+                            android:fontFamily="@font/medium"
                             android:text="Aksara \nSwara"
                             android:textColor="#fff"
                             android:textSize="16dp"></TextView>
@@ -149,7 +179,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/bold"
+                            android:fontFamily="@font/medium"
                             android:text="Aksara \nAngka"
                             android:textColor="#fff"
                             android:textSize="16dp"></TextView>
