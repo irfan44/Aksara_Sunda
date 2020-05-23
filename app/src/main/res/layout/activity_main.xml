@@ -1,86 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FCFCFC"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:orientation="vertical"
         android:background="#FFC033"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
-        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <LinearLayout
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
+                android:fontFamily="@font/bold"
+                android:layout_marginEnd="60dp"
+                android:text="Wilujeng\nSumping!"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/bold"
-                    android:text="Aksara Sunda"/>
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/ic_people" />
+        </LinearLayout>
 
-        </RelativeLayout>
-
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FCFCFC">
-
-        <LinearLayout
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <View
-                    android:id="@+id/view"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/bgmain" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_centerInParent="true"
-                    android:layout_toStartOf="@+id/imageView"
-                    android:fontFamily="@font/bold"
-                    android:text="Wilujeng Sumping!"
-                    android:textColor="#fff"
-                    android:textSize="24sp" />
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerInParent="true"
-                    android:layout_marginEnd="10dp"
-                    app:srcCompat="@drawable/ic_people" />
-            </RelativeLayout>
-
+            android:layout_height="match_parent"
+            app:optRoundCardLeftTopCorner="true"
+            app:optRoundCardRightTopCorner="true"
+            app:optRoundCardLeftBottomCorner="false"
+            app:optRoundCardRightBottomCorner="false"
+            app:optRoundCardCornerRadius="20dp"
+            android:background="#fff"
+            >
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -91,9 +54,8 @@
                 android:rowCount="6">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cdng"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="80dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
                     app:cardBackgroundColor="#FFAB06"
@@ -127,7 +89,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="80dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
                     app:cardBackgroundColor="#FF5D00"
@@ -161,7 +123,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="80dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
                     app:cardBackgroundColor="#314785"
@@ -192,9 +154,45 @@
                             android:src="@drawable/ic_aksara_angka"></ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="#FFAB06"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="2dp">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/medium"
+                            android:text="Rangken"
+                            android:textColor="#fff"
+                            android:textSize="16dp"></TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/ic_aksara_ngalagena"></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </GridLayout>
-        </LinearLayout>
-    </ScrollView>
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
 
-</LinearLayout>
+    </LinearLayout>
+
+
+
+
+</ScrollView>
