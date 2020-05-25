@@ -8,39 +8,70 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
-
+        android:background="@color/ngalagena"
         android:layout_height="192dp"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        >
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:toolbarId="@+id/toolbar"
             app:title="Aksara Ngalagena"
+            app:expandedTitleGravity="center_vertical"
+            app:expandedTitleTextAppearance="@style/titleExtend"
+            app:collapsedTitleTextAppearance="@style/title"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:layout_scrollInterpolator="@android:anim/decelerate_interpolator"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_aksara_ngalagena"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="45dp"
+                >
+            </ImageView>
 
-            app:contentScrim="?attr/colorPrimary">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
+                android:layout_width="match_parent"
+                >
+
+            </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-
+        app:behavior_overlapTop="20dp"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            >
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:optRoundCardLeftTopCorner="true"
+                app:optRoundCardRightTopCorner="true"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false"
+                app:optRoundCardCornerRadius="20dp"
+                android:background="#fff"
+                >
+
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
 
         </LinearLayout>
+
 
     </androidx.core.widget.NestedScrollView>
 

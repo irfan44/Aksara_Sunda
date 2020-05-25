@@ -58,6 +58,7 @@
                     android:layout_height="80dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
+                    android:onClick="ngalagena"
                     app:cardBackgroundColor="#FFAB06"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="2dp">
