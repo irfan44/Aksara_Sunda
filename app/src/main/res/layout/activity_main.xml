@@ -1,18 +1,43 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
 
-    >
-    <LinearLayout
-        android:orientation="vertical"
-        android:background="#FFC033"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:gravity="center_vertical"
+        android:layout_height="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:background="#232C80"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginStart="30dp"
+            />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#232C80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <LinearLayout
             android:orientation="horizontal"
-            android:gravity="center"
+            android:gravity="start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -20,7 +45,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bold"
-                android:layout_marginEnd="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
                 android:text="Wilujeng\nSumping!"
                 android:textColor="#fff"
                 android:textSize="20sp"
@@ -28,172 +55,150 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="200dp"
+                android:layout_width="240dp"
                 android:layout_height="200dp"
-                android:layout_marginEnd="10dp"
-                app:srcCompat="@drawable/ic_people" />
+                app:srcCompat="@drawable/bgnew" />
         </LinearLayout>
 
-        <com.github.captain_miao.optroundcardview.OptRoundCardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:optRoundCardLeftTopCorner="true"
-            app:optRoundCardRightTopCorner="true"
-            app:optRoundCardLeftBottomCorner="false"
-            app:optRoundCardRightBottomCorner="false"
-            app:optRoundCardCornerRadius="20dp"
-            android:background="#fff"
-            >
-            <GridLayout
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:alignmentMode="alignMargins"
-                android:columnCount="2"
-                android:columnOrderPreserved="false"
-                android:rowCount="6">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="80dp"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    android:onClick="ngalagena"
-                    app:cardBackgroundColor="#FFAB06"
-                    app:cardCornerRadius="30dp"
-                    app:cardElevation="2dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:optRoundCardLeftTopCorner="true"
+                app:optRoundCardRightTopCorner="true"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false"
+                app:optRoundCardCornerRadius="20dp"
+                android:background="#fff"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
+                        android:text="Pengertian"
+                        android:textSize="18sp"
+                        android:textColor="#232C80"
+                        android:fontFamily="@font/medium"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/book"
+                        android:textColor="#2E2949"
+                        android:textSize="16sp"
+                        android:text="@string/pengertian"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Materi"
+                        android:textSize="18sp"
+                        android:textColor="#232C80"
+                        android:fontFamily="@font/medium"
+                        />
+                </LinearLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="6">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:fontFamily="@font/medium"
-                            android:text="Aksara \nNgalagena"
-                            android:textColor="#fff"
-                            android:textSize="16dp"></TextView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:onClick="ngalagena"
+                        app:cardBackgroundColor="#466EB6"
+                        app:cardCornerRadius="20dp"
+
+                        app:cardElevation="2dp">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="20dp"
-                            android:src="@drawable/ic_aksara_ngalagena"></ImageView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="80dp"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="#FF5D00"
-                    app:cardCornerRadius="30dp"
-                    app:cardElevation="2dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:fontFamily="@font/medium"
-                            android:text="Aksara \nSwara"
-                            android:textColor="#fff"
-                            android:textSize="16dp"></TextView>
+                            android:src="@drawable/card1"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:onClick="ngalagena"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="#355389"
+                        app:cardElevation="2dp">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="20dp"
-                            android:src="@drawable/ic_aksara_swara"></ImageView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="80dp"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="#314785"
-                    app:cardCornerRadius="30dp"
-                    app:cardElevation="2dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:fontFamily="@font/medium"
-                            android:text="Aksara \nAngka"
-                            android:textColor="#fff"
-                            android:textSize="16dp"></TextView>
+                            android:src="@drawable/card2"
+                           />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:onClick="ngalagena"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="#86B1F2"
+                        app:cardElevation="2dp">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="40dp"
-                            android:src="@drawable/ic_aksara_angka"></ImageView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="80dp"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="#FFAB06"
-                    app:cardCornerRadius="30dp"
-                    app:cardElevation="2dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:fontFamily="@font/medium"
-                            android:text="Rangken"
-                            android:textColor="#fff"
-                            android:textSize="16dp"></TextView>
+                            android:src="@drawable/card3"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:onClick="ngalagena"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="#355389"
+                        app:cardElevation="2dp">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="20dp"
-                            android:src="@drawable/ic_aksara_ngalagena"></ImageView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </GridLayout>
-        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/card1"
+                            />
 
-    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
 
+                </GridLayout>
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 
-</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
