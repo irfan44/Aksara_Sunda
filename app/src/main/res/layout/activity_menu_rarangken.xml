@@ -11,13 +11,13 @@
         android:gravity="center_vertical"
         android:layout_height="50dp"
         android:layout_width="match_parent"
-        android:background="#466EB6"
+        android:background="#96D9C9"
         >
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo"
+            android:src="@drawable/logoblack"
             android:layout_marginStart="30dp"
             />
 
@@ -33,7 +33,7 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:background="#466EB6"
+            android:background="#96D9C9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
@@ -49,8 +49,8 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="40dp"
-                    android:text="Aksara\nNgalagena"
-                    android:textColor="#fff"
+                    android:text="Rarangken"
+                    android:textColor="#000"
                     android:textSize="20sp"
                     />
 
@@ -61,7 +61,7 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/ic_aksara_ngalagena" />
+                    android:src="@drawable/rarangken" />
             </LinearLayout>
 
             <com.github.captain_miao.optroundcardview.OptRoundCardView
@@ -86,7 +86,7 @@
                         android:layout_height="wrap_content"
                         android:text="Pengertian"
                         android:textSize="18sp"
-                        android:textColor="#466EB6"
+                        android:textColor="#000"
                         android:fontFamily="@font/medium"
                         />
                     <TextView
@@ -96,7 +96,7 @@
                         android:fontFamily="@font/book"
                         android:textColor="#2E2949"
                         android:textSize="16sp"
-                        android:text="@string/ngalagena"
+                        android:text="@string/rarangken"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -104,15 +104,15 @@
                         android:layout_marginTop="10dp"
                         android:text="Huruf"
                         android:textSize="18sp"
-                        android:textColor="#466EB6"
+                        android:textColor="#000"
                         android:fontFamily="@font/medium"
                         />
                     <ImageView
                         android:layout_marginTop="5dp"
                         android:layout_gravity="center"
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
-                        android:src="@drawable/hurufngalagena"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/sundanese_dia"
                         />
                 </LinearLayout>
 

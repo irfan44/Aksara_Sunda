@@ -21,5 +21,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void swara (View view){
+        Intent intent = new Intent(MainActivity.this, menu_swara.class);
+        startActivity(intent);
+    }
+
+    public void angka (View view){
+        Intent intent = new Intent(MainActivity.this, menu_angka.class);
+        startActivity(intent);
+    }
+
+    public void rarangken (View view){
+        Intent intent = new Intent(MainActivity.this, menu_rarangken.class);
+        startActivity(intent);
+    }
+
 
 }

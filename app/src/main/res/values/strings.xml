@@ -3,4 +3,16 @@
     <string name="pengertian">
         Aksara Sunda digunakan di wilayah sekitar Jawa Barat dan digunakan dalam kurun waktu yang cukup lama. Aksara Sunda memiliki beberapa variasi tergantung dari media penulisannya (batu, kertas, dll), namun secara umum Aksara Sunda dapat disusun menjadi Aksara Ngalagena, Swara, dan Angka. Sedangkan Rarangken digunkan untuk memberikan vokalisasi
     </string>
+    <string name="ngalagena">
+        Aksara Ngalagena adalah lambang-lambang bunyi yang dapat dipandang sebagai fonem konsonan yang secara silabis mengandung bunyi vokal “a”. \n\nJumlah aksara Sunda Kuno ini ada delapan belas jenis aksara ngalagena yang susunannya disesuaikan dengan sistem kedudukan artikulasi-atikulator, seperti guttural ‘kerongkongan', platal 'langit-langit', lingual 'lidah, dental 'gigi' dan labial 'bibir'.
+    </string>
+    <string name="swara">
+        Aksara Swara adalah aksara yang secara silabis memliki harkat bunyi vokal yang dalam sistem aksara Sunda Kuno berjumlah lima buah. Ada tiga buah aksara swara yang masing-masing memiliki dua lambang, yaitu /a/, /é/, dan /i/. Ketiga varian lambang aksara masing-masing tersebut dalam penggunaannya sering dipertukarkan secara bebas dengan nilai harkat bunyi yang tetap.
+    </string>
+    <string name="angka">
+        Aksara angka atau wilangan dalam bahasa sunda merupakan angka dalam tatabahasa sunda. Angka dalam aksara wilangan tidak berbeda secara urutan dnengan angka latin, yakni urutan 0 sampai 9, namun memiliki bentuk yang berbeda.\n\nJika Kaidah penulisan huruf latin arahnya dari dari kiri ke kanan sama juga dengan kaidah dalang aksara wilangan, yang membedakan adalah dalam penulisan angka sunda diapit oleh bar tanda pisah (|).
+    </string>
+    <string name="rarangken">
+        Rarangken adalah sebuah sistem aturan dalam pengucapan bahasa sunda. karena dalam satu aksara terdiri dari huruf dengan ditambahkannya vokal, karena dalam menyusun kalimat dalam penulisan perlu aturan agar bisa terbentuk kalimat.\n\nSelain itu rarangken berfungsi sebagai aturan bunyi vokalisasi aksara. penempatan posisi rarangken ada di 3 posisi  penempatan yaitu penempatan di atas ( luhur) di gigir (pinggir)  dan di bawah (handap).
+    </string>
 </resources>

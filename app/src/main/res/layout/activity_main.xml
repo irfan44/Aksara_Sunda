@@ -57,7 +57,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="240dp"
                 android:layout_height="200dp"
-                app:srcCompat="@drawable/bgnew" />
+                android:src="@drawable/bgnew" />
         </LinearLayout>
 
             <com.github.captain_miao.optroundcardview.OptRoundCardView
@@ -140,7 +140,7 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        android:onClick="ngalagena"
+                        android:onClick="swara"
                         app:cardCornerRadius="20dp"
                         app:cardBackgroundColor="#355389"
                         app:cardElevation="2dp">
@@ -160,7 +160,7 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        android:onClick="ngalagena"
+                        android:onClick="angka"
                         app:cardCornerRadius="20dp"
                         app:cardBackgroundColor="#86B1F2"
                         app:cardElevation="2dp">
@@ -179,15 +179,16 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        android:onClick="ngalagena"
+                        android:onClick="rarangken"
                         app:cardCornerRadius="20dp"
-                        app:cardBackgroundColor="#355389"
+                        app:cardBackgroundColor="#96D9C9"
                         app:cardElevation="2dp">
 
                         <ImageView
+                            android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/card1"
+                            android:src="@drawable/card4"
                             />
 
                     </androidx.cardview.widget.CardView>
