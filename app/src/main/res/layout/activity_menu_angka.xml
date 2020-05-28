@@ -119,6 +119,7 @@
                         android:id="@+id/soal_angka"
                         android:layout_gravity="end"
                         android:gravity="center"
+                        android:textAllCaps="false"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="40dp"
                         android:layout_width="100dp"
