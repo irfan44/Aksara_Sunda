@@ -12,6 +12,7 @@
         android:layout_height="50dp"
         android:layout_width="match_parent"
         android:background="#96D9C9"
+        app:elevation="0dp"
         >
 
         <ImageView

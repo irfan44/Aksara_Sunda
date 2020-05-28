@@ -12,6 +12,7 @@
         android:layout_height="50dp"
         android:layout_width="match_parent"
         android:background="#355389"
+        app:elevation="0dp"
         >
 
         <ImageView
@@ -39,6 +40,7 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:gravity="start"
+                android:background="#355389"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
