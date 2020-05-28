@@ -115,6 +115,19 @@
                         android:layout_height="200dp"
                         android:src="@drawable/hurufangka"
                         />
+                    <Button
+                        android:id="@+id/soal_ng"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Soal"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/bold"
+                        android:textSize="16sp"
+                        android:background="@drawable/btnangka"/>
                 </LinearLayout>
 
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
