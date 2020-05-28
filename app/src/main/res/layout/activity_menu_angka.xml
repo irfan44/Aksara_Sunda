@@ -116,7 +116,7 @@
                         android:src="@drawable/hurufangka"
                         />
                     <Button
-                        android:id="@+id/soal_ng"
+                        android:id="@+id/soal_angka"
                         android:layout_gravity="end"
                         android:gravity="center"
                         android:layout_marginTop="20dp"
