@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
-
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -27,8 +25,6 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <LinearLayout
@@ -51,7 +47,8 @@
                     android:id="@+id/kuis"
                     android:textSize="20sp"
                     android:fontFamily="@font/bold"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000"
+                    />
 
             </LinearLayout>
 
@@ -63,8 +60,8 @@
                 app:optRoundCardLeftBottomCorner="false"
                 app:optRoundCardRightBottomCorner="false"
                 app:optRoundCardCornerRadius="20dp"
-                android:background="#fff"
-                >
+                android:background="#fff">
+
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_marginTop="20dp"
@@ -134,10 +131,6 @@
                             android:textAllCaps="false"/>
                     </LinearLayout>
 
-
-
-
-
                 </LinearLayout>
 
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
@@ -145,6 +138,5 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
