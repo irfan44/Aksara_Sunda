@@ -21,7 +21,7 @@ public class hasilsoalpg extends AppCompatActivity {
 
     public void ulangi(View view){
         finish();
-        Intent a = new Intent(getApplicationContext(),MainActivity.class);
+        Intent a = new Intent(getApplicationContext(),soalpg.class);
         startActivity(a);
     }
 }
