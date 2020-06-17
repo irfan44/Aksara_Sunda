@@ -117,19 +117,6 @@
                         android:src="@drawable/hurufswara"
                         />
 
-                    <Button
-                        android:id="@+id/soal_swara"
-                        android:layout_gravity="end"
-                        android:gravity="center"
-                        android:layout_marginTop="20dp"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:textAllCaps="false"
-                        android:text="Soal"
-                        android:textColor="#fff"
-                        android:fontFamily="@font/bold"
-                        android:textSize="16sp"
-                        android:background="@drawable/btnswara"/>
                 </LinearLayout>
 
             </com.github.captain_miao.optroundcardview.OptRoundCardView>

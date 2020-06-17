@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:gravity="center_vertical"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#F7CC7F"
+        app:elevation="0dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoblack"
+            android:layout_marginStart="30dp"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#F7CC7F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#F7CC7F"
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kuis Sederhana"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/kuis"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:optRoundCardLeftTopCorner="true"
+                app:optRoundCardRightTopCorner="true"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false"
+                app:optRoundCardCornerRadius="20dp"
+                android:background="#fff"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:id="@+id/pilihan"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:text="Pilihan A"
+                            android:id="@+id/pilihanA"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:text="Pilihan B"
+                            android:id="@+id/pilihanB"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:text="Pilihan C"
+                            android:id="@+id/pilihanC"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/medium"
+                            android:textColor="#000000"
+                            android:text="Pilihan D"
+                            android:id="@+id/pilihanD"/>
+
+                    </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_margin="40dp"
+                            android:id="@+id/next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:onClick="next"
+                            android:background="@drawable/btnpg"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/bold"
+                            android:textColor="#000000"
+                            android:text="Berikutnya"
+                            android:textAllCaps="false"/>
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

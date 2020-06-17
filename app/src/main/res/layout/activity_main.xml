@@ -194,6 +194,25 @@
                             />
 
                     </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:onClick="soalpg"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="#F7CC7F"
+                        app:cardElevation="2dp">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/card5"
+                            />
+
+                    </androidx.cardview.widget.CardView>
 
 
                 </GridLayout>

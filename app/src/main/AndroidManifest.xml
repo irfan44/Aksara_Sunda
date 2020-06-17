@@ -9,10 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".soal_rarangken"></activity>
-        <activity android:name=".soal_angka" />
-        <activity android:name=".soal_swara" />
-        <activity android:name=".soal_ngalagena" />
+        <activity android:name=".hasilsoalpg"></activity>
+        <activity android:name=".soalpg" />
         <activity android:name=".menu_rarangken" />
         <activity android:name=".menu_angka" />
         <activity android:name=".menu_swara" />

@@ -115,20 +115,6 @@
                         android:layout_width="wrap_content"
                         android:src="@drawable/sundanese_dia"
                         />
-                    <Button
-                        android:id="@+id/soal_rara"
-                        android:layout_gravity="end"
-                        android:gravity="center"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="40dp"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:textAllCaps="false"
-                        android:text="Soal"
-                        android:textColor="#000"
-                        android:fontFamily="@font/bold"
-                        android:textSize="16sp"
-                        android:background="@drawable/btnrara"/>
                 </LinearLayout>
 
             </com.github.captain_miao.optroundcardview.OptRoundCardView>
