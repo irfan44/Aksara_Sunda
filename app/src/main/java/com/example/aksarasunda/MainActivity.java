@@ -46,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void soalgambar (View view){
+        Intent intent = new Intent(MainActivity.this, soalgambar.class);
+        startActivity(intent);
+    }
+
     public void konversi (View view){
         Intent intent = new Intent(MainActivity.this, KonversiAksara.class);
         startActivity(intent);

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:gravity="center_vertical"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#F7CC7F"
+        app:elevation="0dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoblack"
+            android:layout_marginStart="30dp"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#F7CC7F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#F7CC7F"
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+
+                <ImageView
+                    android:id="@+id/imageView_tebak"
+                    android:layout_width="348dp"
+                    android:layout_height="244dp"
+                    android:background="@android:color/white"
+                    android:src="@drawable/pajajaran"
+                    />
+
+            </LinearLayout>
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:optRoundCardLeftTopCorner="true"
+                app:optRoundCardRightTopCorner="true"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false"
+                app:optRoundCardCornerRadius="20dp"
+                android:background="#fff">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_gravity="center"
+                        android:id="@+id/editText_jawab"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:inputType="textCapWords"
+                        android:fontFamily="@font/medium"
+                        android:textSize="16sp"
+                        android:focusedByDefault="true"
+                        android:hint="  Jawab disini"
+                        android:background="@drawable/texteditgambar"
+                        android:layout_weight="1"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_margin="40dp"
+                            android:id="@+id/buttonNext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btnpg"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/bold"
+                            android:textColor="#000000"
+                            android:text="Berikutnya"
+                            android:textAllCaps="false"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

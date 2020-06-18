@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".menu_pungtuasi"></activity>
+        <activity android:name=".hasilsoalgambar"></activity>
+        <activity android:name=".soalgambar" />
+        <activity android:name=".menu_pungtuasi" />
         <activity android:name=".KonversiAksara" />
         <activity android:name=".hasilsoalpg" />
         <activity android:name=".soalpg" />
