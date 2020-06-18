@@ -14,6 +14,7 @@ Aplikasi android untuk pembelajaran aksara sunda (dalam pengembangan)
 
 ### Soal
 - Pilihan Ganda
+- Tebak Gambar
 
 ## Kontributor
 - Irfan Nurghiffari M
