@@ -19,6 +19,7 @@ Aplikasi android untuk pembelajaran aksara sunda (dalam pengembangan)
 ## Kontributor
 - Irfan Nurghiffari M
 - Fajar Nashirul Haq
+- Damar Galih Anshary
 
 ## Sumber
 - SundaConv.js
