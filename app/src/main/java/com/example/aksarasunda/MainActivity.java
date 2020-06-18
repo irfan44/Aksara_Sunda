@@ -36,8 +36,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void pungtuasi (View view){
+        Intent intent = new Intent(MainActivity.this, menu_pungtuasi.class);
+        startActivity(intent);
+    }
+
     public void soalpg (View view){
         Intent intent = new Intent(MainActivity.this, soalpg.class);
+        startActivity(intent);
+    }
+
+    public void konversi (View view){
+        Intent intent = new Intent(MainActivity.this, KonversiAksara.class);
         startActivity(intent);
     }
 

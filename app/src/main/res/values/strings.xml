@@ -15,4 +15,7 @@
     <string name="rarangken">
         Rarangken adalah sebuah sistem aturan dalam pengucapan bahasa sunda. karena dalam satu aksara terdiri dari huruf dengan ditambahkannya vokal, karena dalam menyusun kalimat dalam penulisan perlu aturan agar bisa terbentuk kalimat.\n\nSelain itu rarangken berfungsi sebagai aturan bunyi vokalisasi aksara. penempatan posisi rarangken ada di 3 posisi  penempatan yaitu penempatan di atas ( luhur) di gigir (pinggir)  dan di bawah (handap).
     </string>
+    <string name="pungtuasi">
+        Pungtuasi atau tanda baca yang dipakai untuk melengkapi penggunaan aksara Sunda dalam penulisan suatu kalimat, alinea, maupun wacana dilakukan dengan mengadopsi semua tanda baca yang berlaku pada sistem tata tulis huruf Latin.\n\nTanda baca yang dimaksud adalah koma ( , ), peun ‘titik’ ( . ), titik-koma ( ; ), deubeul peun ‘titik-dua’ ( :), panyeluk ‘tanda seru’ ( ! ), pananya ‘tanda tanya’ ( ? ), kekenteng ‘tanda kutip’ ( “ … “ ), panyambung ‘tanda hubung’ ( - ), tanda kurung (()), dan sebagainya.\n\nUkuran fisik tanda baca disesuaikan dengan ukuran fisik aksara Sunda. Sementara itu yang berkaitan dengan nama predikat atau gelar, baik gelar akademis maupun gelar keagamaan penulisannya tetap menggunakan sistem tata tulis dengan huruf Latin yang berlaku saat ini.
+    </string>
 </resources>

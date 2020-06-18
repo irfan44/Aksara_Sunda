@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Konvérsi Aksara Latin - Aksara Sunda</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./SundaConv.js" type="text/javascript"></script>
+</head><body>
+<div id="page-wrap">
+    <br>
+    <h3>Teks Latin</h3>
+    <textarea name="LatinTextBox" id="LatinText" onkeyup="btLatin2Sunda()" onfocus="setBg('LatinText','#e5fff3');" onblur="btLatin2Sunda();setBg('LatinText','white')">
+
+        </textarea>
+    <br>
+    <div style="text-align: center">
+        <!--<input value="Latin ka Sunda" type="button" onclick="btLatin2Sunda()">
+        <input value="Sunda ka Latin" type="button" onclick="btSunda2Latin()">-->
+    </div>
+    <br>
+    <h3>Aksara Sunda</h3>
+    <textarea name="SundaTextBox" id="SundaText" onkeyup="btSunda2Latin()" onfocus="setBg('SundaText','#e5fff3');" onblur="btSunda2Latin();setBg('SundaText','white')"></textarea>
+    <p class="footer">
+        &copy; 2008-2013 Dian Tresna Nugraha<br/>
+        Get source package of this webpage: <a href="https://github.com/diantn/SundaConv/archive/gh-pages.zip">from GitHub</a>.
+    </p>
+</div>
+</body></html>

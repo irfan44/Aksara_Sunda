@@ -23,7 +23,7 @@ android {
     sourceSets {
         main {
             assets {
-                srcDirs 'src/main/assets', 'src/main/res/font'
+                srcDirs 'src/main/assets', 'src/main/res/font', 'src/main/assets/2'
             }
         }
     }
