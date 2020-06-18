@@ -20,7 +20,7 @@ Aplikasi android untuk pembelajaran aksara sunda (dalam pengembangan)
 - Fajar Nashirul Haq
 
 ## Sumber
-- SundaCov.js
+- SundaConv.js
   © 2013, 2008 Dian Tresna Nugraha
 - Font Aksara Sunda Unicode
   © 2016 Ilham Nurwansah
