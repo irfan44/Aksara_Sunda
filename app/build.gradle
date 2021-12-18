@@ -50,6 +50,6 @@ dependencies {
     }
 
     dependencies {
-        compile 'com.github.captain-miao:optroundcardview:1.0.0'
+        implementation 'com.github.captain-miao:optroundcardview:1.0.0'
     }
 }
